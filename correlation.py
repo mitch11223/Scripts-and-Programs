@@ -44,36 +44,39 @@ key = {'ATL':'AtlantaHawks', 'BOS':'BostonCeltics', 'BRK':'BrooklynNets','CHO':'
            'UTA':'UtahJazz','WAS':'WashingtonWizards'}
 key_2 = {value: key for key, value in key.items()}
 
-player_list = {'ATL':['Clint Capela', 'John Collins', 'Jarrett Culver', 'Trent Forrest', 'AJ Griffin', 'Aaron Holiday', 'Justin Holiday', "De'Andre Hunter", 'Jalen Johnson', 'Frank Kaminsky', 'Dejounte Murray', 'Onyeka Okongwu', 'Trae Young'],
-               'BOS':['Malcolm Brogdon', 'Jaylen Brown', 'Blake Griffin', 'Al Horford', 'Justin Jackson', 'Mfiondu Kabengele', 'Luke Kornet', 'Payton Pritchard', 'Marcus Smart', 'Jayson Tatum', 'Noah Vonleh', 'Derrick White', 'Grant Williams'],
-               'BRK':['Nic Claxton', 'Seth Curry', 'Kevin Durant', 'Joe Harris', 'Kyrie Irving', 'Patty Mills', 'Markieff Morris', "Royce O'Neale", 'Ben Simmons', 'Edmond Sumner', 'Cam Thomas', 'Yuta Watanabe'],
-               'CHO':['LaMelo Ball', 'James Bouknight', 'Gordon Hayward', 'Kai Jones', 'Theo Maledon', 'Cody Martin', 'Jalen McDaniels', 'Kelly Oubre Jr.', 'Mason Plumlee', 'Nick Richards', 'Terry Rozier', 'Dennis Smith Jr.', 'P.J. Washington'],
-               'CHI':['Tony Bradley', 'Alex Caruso', 'DeMar DeRozan', 'Goran Dragic', 'Andre Drummond', 'Javonte Green', 'Zach LaVine', 'Marko Simonovic', 'Nikola Vucevic', 'Coby White', 'Patrick Williams'],
-               'CLE':['Jarrett Allen', 'Mamadi Diakite', 'Darius Garland', 'Caris LeVert', 'Robin Lopez', 'Kevin Love', 'Donovan Mitchell', 'Evan Mobley', 'Raul Neto', 'Isaac Okoro', 'Lamar Stevens', 'Dean Wade'],
-               'DAL':['Davis Bertans', 'Reggie Bullock', 'Spencer Dinwiddie', 'Luka Doncic', 'Tyler Dorsey', 'Dorian Finney-Smith', 'Josh Green', 'Tim Hardaway Jr.', 'Jaden Hardy', 'JaVale McGee', 'Dwight Powell', 'Christian Wood'],
-               'DEN':['Bruce Brown', 'Kentavious Caldwell-Pope', 'Vlatko Cancar', 'Aaron Gordon', 'Jeff Green', 'Bones Hyland', 'Nikola Jokic', 'DeAndre Jordan', 'Jamal Murray', 'Zeke Nnaji', 'Michael Porter Jr.', 'Davon Reed', 'Ish Smith'],
-               'DET':['Marvin Bagley III', 'Saddiq Bey','Bojan Bogdanovic', 'Alec Burks', 'Cade Cunningham', 'Hamidou Diallo', 'Jalen Duren', 'Killian Hayes', 'Jaden Ivey', 'Cory Joseph', 'Kevin Knox', 'Isaiah Livers', 'Rodney McGruder', 'Nerlens Noel', 'Isaiah Stewart'],
-               'GSW':['Stephen Curry', 'Donte DiVincenzo', 'Draymond Green', 'JaMychal Green', 'Ty Jerome', 'Jonathan Kuminga', 'Anthony Lamb', 'Kevon Looney', 'Moses Moody', 'Jordan Poole', 'Klay Thompson', 'Andrew Wiggins', 'James Wiseman'],
-               'HOU':['Josh Christopher', 'Tari Eason', 'Bruno Fernando', 'Usman Garuba', 'Eric Gordon', 'Jalen Green', 'Boban Marjanovic', 'Kenyon Martin Jr.', 'Garrison Mathews', 'Kevin Porter Jr.', 'Alperen Sengun', 'Jabari Smith Jr.', "Jae'Sean Tate", 'TyTy Washington Jr.'],
-               'IND':['Goga Bitadze', 'Oshae Brissett', 'Chris Duarte', 'Tyrese Haliburton', 'Buddy Hield', 'Isaiah Jackson', 'James Johnson', 'Bennedict Mathurin', 'T.J. McConnell', 'Andrew Nembhard', 'Aaron Nesmith', 'Jalen Smith','Myles Turner'],
-               'LAC':['Nicolas Batum', 'Moses Brown', 'Amir Coffey', 'Robert Covington', 'Paul George', 'Reggie Jackson', 'Luke Kennard', 'Kawhi Leonard', 'Terance Mann', 'Marcus Morris', 'Norman Powell', 'John Wall', 'Ivica Zubac'],
-               'LAL':['Patrick Beverley', 'Troy Brown Jr.', 'Thomas Bryant', 'Anthony Davis', 'Wenyen Gabriel', 'LeBron James', 'Damian Jones', 'Kendrick Nunn', 'Austin Reaves', 'Dennis Schroder', 'Juan Toscano-Anderson', 'Lonnie Walker IV', 'Russell Westbrook'],
-               'MEM':['Steven Adams', 'Santi Aldama', 'Desmond Bane', 'Dillon Brooks', 'Brandon Clarke', 'Jaren Jackson Jr.', 'Tyus Jones', 'John Konchar', 'Jake LaRavia', 'Ja Morant', 'David Roddy', 'Xavier Tillman Sr.'],
-               'MIA':['Bam Adebayo', 'Jimmy Butler', 'Jamal Cain', 'Dewayne Dedmon', 'Udonis Haslem', 'Tyler Herro', 'Haywood Highsmith', 'Nikola Jovic', 'Kyle Lowry', 'Caleb Martin', 'Duncan Robinson', 'Victor Oladipo','Max Strus', 'Gabe Vincent'],
-               'MIL':['Grayson Allen', 'Giannis Antetokounmpo', 'MarJon Beauchamp', 'Jevon Carter', 'Pat Connaughton', 'George Hill', 'Jrue Holiday', 'Serge Ibaka', 'Brook Lopez', 'Wesley Matthews', 'Jordan Nwora', 'Bobby Portis'],
-               'MIN':['Kyle Anderson', 'Anthony Edwards', 'Bryn Forbes', 'Rudy Gobert','Jaden McDaniels', 'Jordan McLaughlin', 'Jaylen Nowell', 'Taurean Prince', 'Naz Reid', 'Austin Rivers', "D'Angelo Russell", 'Karl-Anthony Towns'],
-               'NOP':['Jose Alvarado', 'Dyson Daniels', "Devonte' Graham", 'Jaxson Hayes', 'Willy Hernangomez', 'Brandon Ingram', 'Herbert Jones', 'Naji Marshall', 'CJ McCollum', 'Trey Murphy III', 'Larry Nance Jr.', 'Jonas Valanciunas', 'Zion Williamson'],
-               'NYK':['RJ Barrett', 'Jalen Brunson', 'Evan Fournier', 'Quentin Grimes', 'Isaiah Hartenstein','Miles McBride', 'Immanuel Quickley', 'Julius Randle', 'Cam Reddish', 'Mitchell Robinson', 'Derrick Rose', 'Jericho Sims', 'Obi Toppin'],
-               'OKC':['Darius Bazley', 'Ousmane Dieng', 'Luguentz Dort', 'Josh Giddey', 'Shai Gilgeous-Alexander', 'Isaiah Joe', 'Tre Mann', 'Mike Muscala', 'Aleksej Pokusevski', 'Jeremiah Robinson-Earl', 'Aaron Wiggins', 'Jalen Williams', 'Jaylin Williams', 'Kenrich Williams'],
-               'ORL':['Cole Anthony', 'Mo Bamba', 'Paolo Banchero', 'Bol Bol', 'Wendell Carter Jr.', 'Markelle Fultz', 'Gary Harris','Caleb Houstan', 'Chuma Okeke', 'Terrence Ross', 'Admiral Schofield', 'Jalen Suggs', 'Franz Wagner', 'Moritz Wagner'],
-               'PHI':['Joel Embiid','James Harden', 'Montrezl Harrell', 'Tobias Harris', 'Furkan Korkmaz','Tyrese Maxey', "De'Anthony Melton", 'Shake Milton', 'Georges Niang', 'Paul Reed','Matisse Thybulle', 'P.J. Tucker'],
-               'PHO':['Deandre Ayton', 'Bismack Biyombo', 'Devin Booker', 'Mikal Bridges', 'Torrey Craig', 'Cameron Johnson', 'Jock Landale', 'Damion Lee', 'Josh Okogie', 'Chris Paul', 'Cameron Payne', 'Dario Saric', 'Landry Shamet'],
-               'POR':['Drew Eubanks', 'Jerami Grant', 'Josh Hart', 'Keon Johnson', 'Damian Lillard', 'Nassir Little', 'Jusuf Nurkic', 'Shaedon Sharpe', 'Anfernee Simons','Trendon Watford', 'Justise Winslow'],
-               'SAC':['Harrison Barnes', 'Terence Davis', 'Matthew Dellavedova', 'Keon Ellis', "De'Aaron Fox", 'Richaun Holmes', 'Kevin Huerter', 'Alex Len', 'Trey Lyles', 'Chimezie Metu', 'Davion Mitchell','Malik Monk', 'Keegan Murray', 'KZ Okpala', 'Domantas Sabonis'],
-               'SAS':['Charles Bassey', 'Keita Bates-Diop', 'Malaki Branham', 'Zach Collins', 'Gorgui Dieng','Keldon Johnson', 'Tre Jones', 'Romeo Langford', 'Doug McDermott', 'Jakob Poeltl','Josh Richardson', 'Isaiah Roby', 'Jeremy Sochan', 'Devin Vassell', 'Blake Wesley'],
-               'TOR':['Precious Achiuwa', 'OG Anunoby', 'Dalano Banton', 'Scottie Barnes', 'Khem Birch', 'Chris Boucher','Malachi Flynn', 'Christian Koloko', 'Pascal Siakam', 'Gary Trent Jr.', 'Fred VanVleet', 'Thaddeus Young'],
-               'UTA':['Nickeil Alexander-Walker','Malik Beasley','Jordan Clarkson', 'Mike Conley', 'Rudy Gay', 'Talen Horton-Tucker', 'Walker Kessler', 'Lauri Markkanen', 'Kelly Olynyk','Collin Sexton', 'Jarred Vanderbilt'],
-               'WAS':['Deni Avdija', 'Will Barton', 'Bradley Beal','Daniel Gafford', 'Taj Gibson', 'Anthony Gill', 'Rui Hachimura', 'Corey Kispert', 'Kyle Kuzma', 'Monte Morris', 'Kristaps Porzingis','Delon Wright']}
+
+player_list = {
+    'ATL': ['Saddiq Bey', 'Clint Capela', 'John Collins', 'Jarrett Culver', 'Trent Forrest', 'AJ Griffin', 'Aaron Holiday', 'Justin Holiday', "De'Andre Hunter", 'Jalen Johnson', 'Frank Kaminsky', 'Dejounte Murray', 'Onyeka Okongwu', 'Trae Young'],
+    'BOS': ['Malcolm Brogdon', 'Jaylen Brown', 'Blake Griffin', 'Al Horford', 'Mfiondu Kabengele', 'Luke Kornet','Mike Muscala','Payton Pritchard', 'Marcus Smart', 'Jayson Tatum', 'Noah Vonleh', 'Derrick White', 'Grant Williams'],
+    'BRK': ['Mikal Bridges','Nic Claxton', 'Seth Curry','Spencer Dinwiddie','Joe Harris', 'Cam Johnson','Dorian Finney-Smith','Spencer Dinwiddie','Patty Mills', "Royce O'Neale", 'Ben Simmons', 'Edmond Sumner', 'Cam Thomas', 'Yuta Watanabe'],
+    'CHO': ['LaMelo Ball','James Bouknight','Gordon Hayward','Kai Jones','Theo Maledon','Cody Martin','Kelly Oubre Jr.','Nick Richards','Terry Rozier','Dennis Smith Jr.','PJ Washington'],
+    'CHI': ['Patrick Beverley','Tony Bradley','Alex Caruso','DeMar DeRozan','Goran Dragic','Andre Drummond','Javonte Green','Derrick Jones Jr.','Zach LaVine','Marko Simonovic','Nikola Vucevic','Coby White','Patrick Williams'],
+    'CLE': ['Jarrett Allen','Mamadi Diakite','Darius Garland','Caris LeVert','Robin Lopez','Kevin Love','Donovan Mitchell','Evan Mobley','Raul Neto','Isaac Okoro','Lamar Stevens','Dean Wade'],
+    'DAL': ['Davis Bertans','Reggie Bullock','Luka Doncic','Tyler Dorsey','Josh Green','Tim Hardaway Jr.','Jaden Hardy','Kyrie Irving','JaVale McGee','Markieff Morris','Dwight Powell','Christian Wood'],
+    'DEN': ['Bruce Brown','Thomas Bryant','Kentavious Caldwell-Pope','Vlatko Cancar','Aaron Gordon','Jeff Green','Reggie Jackson','Nikola Jokic','DeAndre Jordan','Jamal Murray','Zeke Nnaji','Michael Porter Jr.','Ish Smith'],
+    'DET': ['Marvin Bagley III','Bojan Bogdanovic','Alec Burks','Cade Cunningham','Hamidou Diallo','Jalen Duren','Killian Hayes','Jaden Ivey','Cory Joseph','Isaiah Livers','Rodney McGruder','Isaiah Stewart','James Wiseman'],
+    'GSW': ['Stephen Curry','Donte DiVincenzo','Draymond Green','JaMychal Green','Ty Jerome','Jonathan Kuminga','Anthony Lamb','Kevon Looney','Moses Moody','Jordan Poole','Klay Thompson','Andrew Wiggins'],
+    'HOU': ['Josh Christopher','Tari Eason','Bruno Fernando','Usman Garuba','Jalen Green','Boban Marjanovic','Kenyon Martin Jr.','Garrison Mathews','Kevin Porter Jr.','Alperen Sengun','Jabari Smith Jr.',"JaeSean Tate",'TyTy Washington Jr.'],
+    'IND': ['Goga Bitadze','Oshae Brissett','Chris Duarte','Tyrese Haliburton','Buddy Hield','George Hill','Serge Ibaka','Isaiah Jackson','James Johnson','Bennedict Mathurin','TJ McConnell','Andrew Nembhard','Aaron Nesmith','Jordan Nwora','Jalen Smith','Myles Turner'],
+    'LAC': ['Nicolas Batum','Moses Brown','Amir Coffey','Robert Covington','Paul George','Eric Gordon','Bones Hyland','Kawhi Leonard','Terance Mann','Marcus Morris','Mason Plumlee','Norman Powell','Russell Westbrook','Ivica Zubac'],
+    'LAL': ['Mo Bamba','Malik Beasley','Troy Brown Jr.','Anthony Davis','Wenyen Gabriel','LeBron James','Damian Jones','Rui Hachimura','Austin Reaves',"D'Angelo Russell",'Dennis Schroder','Jarred Vanderbilt','Lonnie Walker IV'],
+    'MEM': ['Steven Adams','Santi Aldama','Desmond Bane','Dillon Brooks','Brandon Clarke','Jaren Jackson Jr.','Tyus Jones','Luke Kennard','John Konchar','Jake LaRavia','Ja Morant','David Roddy','Xavier Tillman Sr.'],
+    'MIA': ['Bam Adebayo','Jimmy Butler','Jamal Cain','Dewayne Dedmon','Udonis Haslem','Tyler Herro','Haywood Highsmith','Nikola Jovic','Kyle Lowry','Caleb Martin','Duncan Robinson','Victor Oladipo','Max Strus','Gabe Vincent'],
+    'MIL': ['Grayson Allen','Giannis Antetokounmpo','MarJon Beauchamp','Jevon Carter','Pat Connaughton','Jae Crowder','Jrue Holiday','Brook Lopez','Wesley Matthews','Bobby Portis'],
+    'MIN': ['Nickeil Alexander-Walker','Kyle Anderson','Mike Conley','Anthony Edwards','Bryn Forbes','Rudy Gobert','Jaden McDaniels','Jordan McLaughlin','Jaylen Nowell','Taurean Prince','Naz Reid','Austin Rivers','Karl-Anthony Towns'],
+    'NOP': ['Jose Alvarado','Dyson Daniels','Jaxson Hayes','Willy Hernangomez','Brandon Ingram','Herbert Jones','Naji Marshall','CJ McCollum','Trey Murphy III','Larry Nance Jr.','Josh Richardson','Jonas Valanciunas','Zion Williamson'],
+    'NYK': ['RJ Barrett','Jalen Brunson','Evan Fournier','Quentin Grimes','Josh Hart','Isaiah Hartenstein','Miles McBride','Immanuel Quickley','Julius Randle','Mitchell Robinson','Derrick Rose','Jericho Sims','Obi Toppin'],
+    'OKC': ['Ousmane Dieng','Luguentz Dort','Josh Giddey','Shai Gilgeous-Alexander','Isaiah Joe','Tre Mann','Aleksej Pokusevski','Jeremiah Robinson-Earl','Dario Saric','Aaron Wiggins','Jalen Williams','Jaylin Williams','Kenrich Williams'],
+    'ORL': ['Cole Anthony','Mo Bamba','Paolo Banchero','Bol Bol','Wendell Carter Jr.','Markelle Fultz','Gary Harris','Caleb Houstan','Chuma Okeke','Terrence Ross','Admiral Schofield','Jalen Suggs','Franz Wagner','Moritz Wagner'],
+    'PHI': ['Joel Embiid','James Harden','Montrezl Harrell','Tobias Harris','Furkan Korkmaz','Tyrese Maxey','Jalen McDaniels',"De'Anthony Melton",'Shake Milton','Georges Niang','Paul Reed','PJ Tucker'],
+    'PHO': ['Deandre Ayton','Darius Bazley','Bismack Biyombo','Devin Booker','Torrey Craig','Kevin Durant','Jock Landale','Damion Lee','Josh Okogie','Chris Paul','Cameron Payne','Landry Shamet','TJ Warren'],
+    'POR': ['Drew Eubanks','Jerami Grant','Keon Johnson','Kevin Knox','Damian Lillard','Nassir Little','Jusuf Nurkic','Cam Reddish','Shaedon Sharpe','Anfernee Simons','Matisse Thybulle','Trendon Watford','Justise Winslow'],
+    'SAC': ['Harrison Barnes','Terence Davis','Matthew Dellavedova','Keon Ellis',"De'Aaron Fox",'Richaun Holmes','Kevin Huerter','Alex Len','Trey Lyles','Chimezie Metu','Davion Mitchell','Malik Monk','Keegan Murray','KZ Okpala','Domantas Sabonis'],
+    'SAS': ['Charles Bassey','Keita Bates-Diop','Malaki Branham','Zach Collins','Gorgui Dieng',"Devonta Graham",'Keldon Johnson','Tre Jones','Romeo Langford','Doug McDermott','Isaiah Roby','Jeremy Sochan','Devin Vassell','Blake Wesley'],
+    'TOR': ['Precious Achiuwa','OG Anunoby','Dalano Banton','Scottie Barnes','Chris Boucher','Malachi Flynn','Christian Koloko','Jakob Poeltl','Otto Porter Jr','Pascal Siakam','Gary Trent Jr.','Fred VanVleet','Thaddeus Young'],
+    'UTA': ['Nickeil Alexander-Walker','Jordan Clarkson','Rudy Gay','Talen Horton-Tucker','Walker Kessler','Lauri Markkanen','Kelly Olynyk','Collin Sexton'],
+    'WAS': ['Deni Avdija','Will Barton','Bradley Beal','Daniel Gafford','Taj Gibson','Anthony Gill','Kendrick Nunn','Corey Kispert','Kyle Kuzma','Monte Morris','Kristaps Porzingis','Delon Wright']
+}
 
 
 
@@ -108,15 +111,22 @@ def playerlog():
         os.makedirs(os.path.dirname(team_filename), exist_ok=True)
         
         #Get webpage to scrape
-        team_url = str('https://www.basketball-reference.com/teams/' + str(team) + '/2023/gamelog/')
+        team_url = f'https://www.basketball-reference.com/teams/{team}/2023/gamelog/'
         html = requests.get(team_url).content
         # parse html and load dataframe
         soup = BeautifulSoup(html, 'html.parser')
         team_df = pandas.read_html(team_url)
         team_df = team_df[0]
         
-        #split to unnamed team and opponent and clean dataset
         
+        #find location
+        loc = team_df['Unnamed: 3_level_0']
+        loc = loc.drop(loc[loc['Unnamed: 3_level_1'] == 'Unnamed: 3_level_1'].index, inplace=False)
+        loc.rename(mapper = {'Unnamed: 3_level_1': 'Loc'}, axis = 1, inplace = True)
+        loc.fillna(value = 10, inplace = True)
+        loc.replace(to_replace = '@', value = -10, inplace = True)
+        
+        #split to unnamed team and opponent and clean dataset        
         dates = team_df['Unnamed: 2_level_0']
         dates = dates.dropna(subset = ['Date'])
         dates = dates.drop(dates[dates['Date'] == 'Date'].index, inplace=False)
@@ -147,12 +157,13 @@ def playerlog():
         
         
         #Recreate original dataframe
-        full_df = pandas.concat([dates,tmscor,oppscor,team_,opp],axis = 1)
+        full_df = pandas.concat([dates,loc,tmscor,oppscor,team_,opp],axis = 1)
         full_df[['Team_FGpct','Team_3Ppct','Team_FTpct','Opp_FGpct','Opp_3Ppct','Opp_FTpct']] = full_df[['Team_FGpct','Team_3Ppct','Team_FTpct','Opp_FGpct','Opp_3Ppct','Opp_FTpct']].astype(str).apply(lambda x: x.str.replace('.', ''))
         # Remove last character from all entries 
         full_df[['Team_FGpct','Team_3Ppct','Team_FTpct','Opp_FGpct','Opp_3Ppct','Opp_FTpct']] = full_df[['Team_FGpct','Team_3Ppct','Team_FTpct','Opp_FGpct','Opp_3Ppct','Opp_FTpct']].astype(str).apply(lambda x: x.str[:-1])
-
-        #print(full_df)
+        full_df.dropna(subset = ['Team_FG'], inplace = True)
+        
+        
         
         full_df = full_df.to_csv(index=False)
         team_file = open(team_filename,'w+')
@@ -220,10 +231,12 @@ def playerlog():
                 playersuffix = '/players/o/onealro01.html'
             if playersuffix == '/players/o/jr.ke01.html':
                 playersuffix = '/players/o/oubreke01.html'
+            if playersuffix == '/players/j/jr.de01.html':
+                playersuffix = '/players/j/jonesde01.html'
             if playersuffix == '/players/s/jr.de01.html':
                 playersuffix = '/players/s/smithde03.html'
             if playersuffix == '/players/w/waship.01.html':
-                playersuffix = '/players/w/washipj01.html'
+                playersuffix = '/players/w/washiP.J.01.html'
             if playersuffix == '/players/h/jr.ti01.html':
                 playersuffix = '/players/h/hardati02.html'
             if playersuffix == '/players/p/jr.mi01.html':
@@ -241,7 +254,7 @@ def playerlog():
             if playersuffix == '/players/w/jr.ty01.html':
                 playersuffix = '/players/w/washity02.html'
             if playersuffix == '/players/m/mccont.01.html':
-                playersuffix = '/players/m/mccontj01.html'
+                playersuffix = '/players/m/mcconT.J.01.html'
             if playersuffix == '/players/c/jr.we01.html':
                 playersuffix = '/players/c/cartewe01.html'
             if playersuffix == '/players/b/jr.tr01.html':
@@ -259,7 +272,9 @@ def playerlog():
             if playersuffix == '/players/n/jr.la01.html':
                 playersuffix = '/players/n/nancela02.html'
             if playersuffix == '/players/t/tuckep.01.html':
-                playersuffix = '/players/t/tuckepj01.html'
+                playersuffix = '/players/t/tuckeP.J.01.html'
+            if playersuffix == '/players/p/jrot01.html':
+                playersuffix = '/players/p/porteot01.html'
             
             print(playersuffix)
             
@@ -510,24 +525,120 @@ def team_splits():
 
 
 def team_splits_analysis():
-    dic = {}
-    ls = []
-    
+    dataframes = {}
+    cols = []
     for team in team_list:
         team_filename = str('TeamFiles/League/Roster/TeamSplits/' + team + '.txt')
         df = pandas.read_csv(team_filename)
-        W = df['W'][4]
-        L = df['L'][4]
-        wpct = (W/(W + L))
-        dic[team] = wpct        
+        df = df.set_index('Value')
+        df['TeamFGpct'] = df['TeamFG']/df['TeamFGA']
+        df['OppFGpct'] = df['OppFG']/df['OppFGA']
+        df['Winpct'] = df['W']/(df['W']+df['L'])
+        dataframes[team] = df
+        cols = []
+        for e in df.columns:
+            cols.append(e)
+    print(cols)      
+    
+    
+    #will contain all team column/row values (ie. OPPPTSFeburary or TEAMFGAtlanta)
+    league_dict = {}
+    for team in team_list:
+        keys = {}
+        for e in cols:
+            df = dataframes[team]
+            for i in range(len(df)):
+                col = df.iloc[i]
+                #print('col',col)
+                val = col[e]               
+                #val is the value per column of the 'col' row
+               
+                keyname = str(df.index[i] + e)
+                #print(keyname)
+               
+                #assigns the team splits to its own dictionary
+                keys[keyname] = val
+                #print(e,df.index[i],val)
+        #print(keys)
+       
+        #assign team dict to league dict
+        league_dict[team] = keys    
         
-        
-        
-    print('win pct')
-    for key, value in sorted(dic.items(), key=lambda item: item[1], reverse=True):
-        print("Key: {}, Value: {}".format(key, value))
+    variable_names = [list(d.keys()) for d in league_dict.values()]
+    common_variables = list(set.intersection(*map(set,variable_names)))
+    data = {team: {var: league_dict[team][var] for var in common_variables} for team in league_dict}
+    df = pandas.DataFrame(data).T
+    df.columns = common_variables
+    print(df)
+    
+    
+    df = df.to_csv()
+    league_filename = str('TeamFiles/League/Roster/TeamSplits/league_splits.txt')
+    os.makedirs(os.path.dirname(league_filename), exist_ok=True)
+    file = open(league_filename,'w')
+    file.write(df)
+    file.close()
+    
+    
+ 
+
+
+
+
+
 
 #Call functions
-playerlog()
-team_splits()
-team_splits_analysis()                    
+def call_func():    
+    playerlog()
+    team_splits()
+    team_splits_analysis()
+    
+call_func()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def playerids():
+    from nba_api.stats.static import players
+    player_ids = {}
+
+    for team in team_list:
+        roster = player_list[team]
+        for player in roster:
+            try:
+                if player == 'OG Anunoby':
+                    player = 'O.G. Anunoby'
+                player_ids[player] = players.find_players_by_full_name(player)[0]['id']
+                
+            except IndexError:
+                print(f'player error: {player}')
+                
+
+
+    player_ids['OG Anunoby'] = player_ids.pop('O.G. Anunoby')
+    player_ids_df = pandas.DataFrame(list(player_ids.items()), columns=['Name', 'ID'])
+    player_ids_df = player_ids_df.to_csv(index = False)
+    team_filename = (f'TeamFiles/League/Roster/playerids/playerids.txt')
+    os.makedirs(os.path.dirname(team_filename), exist_ok=True)
+    file = open(team_filename,'w')
+    file.write(player_ids_df)
+    file.close()
+
+
+
+
+
+
+
+
