@@ -15,3 +15,5 @@ Text to Speech API. (has some local dependiencies so probably wnot work anywhere
 
 
 AaronGordon.txt - ATL.txt - corr_file.txt are example outputs from correlation.py
+
+bet_tracker.py -- tracks bets and performs analysis
