@@ -13,7 +13,12 @@ speechrecognition.py is a script I developed to be able to interact with an Open
 
 Text to Speech API. (has some local dependiencies so probably wnot work anywhere apart from my computer)
 
+Aaron Gordon_Log.csv -- Example condensed gamelog file with custom metric appends
 
 AaronGordon.txt - ATL.txt - corr_file.txt are example outputs from correlation.py
 
 bet_tracker.py -- tracks bets and performs analysis
+
+Cdata_getter.py -- Main NBA Data Acquisition and processing File
+
+Modularized_Execute.py -- MLB file that collects and processes data to be interacted with in 'Player_List.py' through the terminal
